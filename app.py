@@ -21,7 +21,7 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-lottie_coding = "https://lottie.host/47430b2b-3a49-4751-8b38-29c4ece1421b/XFLP7oLHzW.json"
+lottie_coding = "https://lottie.host/65854a92-9354-4343-968a-9988621275bf/AcDiAs4hj5.json"
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
 
