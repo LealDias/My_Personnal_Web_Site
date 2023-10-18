@@ -21,7 +21,7 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-#lottie_coding = load_lottieurl("https://lottie.host/47430b2b-3a49-4751-8b38-29c4ece1421b/XFLP7oLHzW.json")
+lottie_coding = "https://lottie.host/47430b2b-3a49-4751-8b38-29c4ece1421b/XFLP7oLHzW.json"
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
 
@@ -61,8 +61,8 @@ with st.container():
         """
         )
 
-#with right_column:
-  #st_lottie(lottie_coding)
+with right_column:
+  st.markdown(f'<iframe src="{lottie_coding}"></iframe>', unsafe_allow_html=True)
 
 # ------- PROJECTS --------- #
 
