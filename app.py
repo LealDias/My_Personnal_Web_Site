@@ -62,7 +62,7 @@ with st.container():
         )
 
 with right_column:
-  st.markdown(f'<iframe src="{lottie_coding}"></iframe>', unsafe_allow_html=True)
+  st.markdown(f'<iframe src="{lottie_coding}" width="400" height="400" frameborder="0"></iframe>', unsafe_allow_html=True)
 
 # ------- PROJECTS --------- #
 
