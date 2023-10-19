@@ -67,8 +67,8 @@ with st.container():
 
 with right_column:
 # Create a Lottie animation using lottie-web
-  iframe_html = f'<iframe src="images/astronot.json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
-  st.markdown(iframe_html, unsafe_allow_html=True)
+  iframe_html = f'<iframe src="https://lottie.host/?file=65854a92-9354-4343-968a-9988621275bf/AcDiAs4hj5.json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
+  st.write(iframe_html, unsafe_allow_html=True)
 
 # ------- PROJECTS --------- #
 
