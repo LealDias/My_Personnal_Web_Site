@@ -24,7 +24,7 @@ local_css("style/style.css")
 
 
 
-lottie_json = "astronot.json"
+lottie_json = "https://lottie.host/65854a92-9354-4343-968a-9988621275bf/AcDiAs4hj5.json"
 
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
@@ -67,7 +67,7 @@ with st.container():
 
 with right_column:
 # Create a Lottie animation using lottie-web
-  iframe_html = f'<iframe src="{lottie_json.split(".")[0]}.json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
+  iframe_html = f'<iframe src="lottie_json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
   st.markdown(iframe_html, unsafe_allow_html=True)
 
 # ------- PROJECTS --------- #
