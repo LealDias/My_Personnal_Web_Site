@@ -1,18 +1,10 @@
 
 import streamlit as st
 import requests
-#from lottie import LottieComponent
 from PIL import Image
 import json
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
-
-
-#def load_lottieurl(url):
-  #r = requests.get(url)
-  #if r.status_code != 200:
-    #return None
-  #return r.json()
 
 # Local CSS
 
@@ -21,8 +13,6 @@ def local_css(file_name):
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 local_css("style/style.css")
-
-
 
 lottie_json = "https://lottie.host/65854a92-9354-4343-968a-9988621275bf/AcDiAs4hj5.json"
 
@@ -134,4 +124,6 @@ left_column, right_column = st.columns(2)
 with left_column:
   st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
-  st.empty()
+# Create a Lottie animation using lottie-web
+  iframe_html = f'<iframe src="https://lottie.host/?file=7465c052-e14b-41a0-88e8-b251580d7258/cRfMrhXVNW.json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
+  st.write(iframe_html, unsafe_allow_html=True)
