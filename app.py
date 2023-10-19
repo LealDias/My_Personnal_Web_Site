@@ -1,8 +1,9 @@
 
 import streamlit as st
 import requests
-import lottie
+from lottie import LottieComponent
 from PIL import Image
+import json
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
@@ -21,8 +22,10 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-with open("images/astronot.json", "r") as json_file:
-    lottie_json = json_file.read()
+file_path = "astronot .json"
+
+with open(file_path, 'r') as file:
+        data = json.load(file)
 
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
@@ -65,7 +68,7 @@ with st.container():
 
 with right_column:
 # Create a Lottie animation using lottie-web
-  animation = lottie.Animation(json_data=lottie_json)
+  animation = lottie.Animation(json_data=data)
 
 # Display the Lottie animation using HTML
   st.components.v1.html(animation.html, width=400, height=400)
