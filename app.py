@@ -19,13 +19,26 @@ lottie_json = "https://lottie.host/65854a92-9354-4343-968a-9988621275bf/AcDiAs4h
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
 
+
 # --------- HEADER SECTION ---------- #
 
 with st.container():
-    st.subheader("Hi, My name is Diego :wave:")
-    st.title("A Data Analyst and Developer from Brazil")
-    st.write("I'm a technology worker looking foward to help companies increase their efficiency and power by using powerfull technologies")
-    st.write("[Learn More >](https://github.com/LealDias)")
+    
+    text_column , image_column = st.columns((5.5, 3))
+
+    with text_column:
+      st.subheader("Hi, My name is Diego :wave:")
+      st.title("A Data Analyst and Developer from Brazil")
+      st.write("I'm a technology worker looking foward to help companies increase their efficiency and power by using powerfull technologies🚀")
+      st.write("As a professional, I work with integrity and quality, always looking foward to client's satisfaction, and through innovation I believe we can solve problems and improve people's life🏅")
+      st.write("One curiosity about me is that a love custom motorcycles, and even better, I love riding custom motorcycles🏍️! LoL")
+      st.write("Check out my linkedin profile, so you can see my projects and experience as well! Feel free to get in touch from there! You're more than welcome!👋🇼‌🇪‌🇱‌🇨‌🇴‌🇲‌🇪‌🙋")
+      st.write("[Linkedin Profile >](https://github.com/LealDias)")
+
+    with image_column:
+      image_html = f'<img src="https://media.licdn.com/dms/image/D4D03AQFhhrGQkdgbAA/profile-displayphoto-shrink_400_400/0/1696733482141?e=1703116800&v=beta&t=AMfuO3ZXOe0Y7DAvjAcE2pZHDcAHRWaZzHvS8dzGFII" alt="Image" style="border-radius: 100%; width: 400px; height: 400px; float: center; position: sticky; top: 0; right:50">'
+      st.markdown(image_html, unsafe_allow_html=True)
+      #st.image(image_html)
 
 # ------- WHAT I DO ------- #
 
@@ -125,5 +138,5 @@ with left_column:
   st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
 # Create a Lottie animation using lottie-web
-  iframe_html = f'<iframe src="https://lottie.host/?file=7465c052-e14b-41a0-88e8-b251580d7258/cRfMrhXVNW.json" title="Lottie Animation" frameborder="0" style="width:100%; height:600px; top:5; position: absolute"></iframe>'
+  iframe_html = f'<iframe src="https://lottie.host/?file=7465c052-e14b-41a0-88e8-b251580d7258/cRfMrhXVNW.json" title="Lottie Animation" frameborder="0" style="width:100%; height:400px; top:0; position: relative"></iframe>'
   st.write(iframe_html, unsafe_allow_html=True)
