@@ -1,7 +1,7 @@
 
 import streamlit as st
 import requests
-from lottie import LottieComponent
+#from lottie import LottieComponent
 from PIL import Image
 import json
 
@@ -67,9 +67,8 @@ with st.container():
 
 with right_column:
 # Create a Lottie animation using lottie-web
-  lottie_component = LottieComponent(lottie_json)
-  st.write(lottie_component)
-
+  iframe_html = f'<iframe src="https://assets9.lottiefiles.com/packages/lf20_{lottie_json.split(".")[0]}.json" title="Lottie Animation" frameborder="0" style="width:100%; height:500px;"></iframe>'
+  st.markdown(iframe_html, unsafe_allow_html=True)
 
 # ------- PROJECTS --------- #
 
