@@ -7,7 +7,9 @@ Be welcome!
 ## Technologies
 
 Python
+
 Streamlit
+
 Streanlit Cloud
 
 ## Results
