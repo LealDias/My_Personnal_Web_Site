@@ -22,10 +22,9 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-file_path = "astronot .json"
 
-with open(file_path, 'r') as file:
-        data = json.load(file)
+
+lottie_json = "astronot .json"
 
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
@@ -68,10 +67,9 @@ with st.container():
 
 with right_column:
 # Create a Lottie animation using lottie-web
-  animation = lottie.Animation(json_data=data)
+  lottie_component = LottieComponent(lottie_json)
+  st.write(lottie_component)
 
-# Display the Lottie animation using HTML
-  st.components.v1.html(animation.html, width=400, height=400)
 
 # ------- PROJECTS --------- #
 
