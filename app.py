@@ -125,5 +125,5 @@ with left_column:
   st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
 # Create a Lottie animation using lottie-web
-  iframe_html = f'<iframe src="https://lottie.host/?file=7465c052-e14b-41a0-88e8-b251580d7258/cRfMrhXVNW.json" title="Lottie Animation" frameborder="0" style="width:100%; height:600px; top:0; position: absolute"></iframe>'
+  iframe_html = f'<iframe src="https://lottie.host/?file=7465c052-e14b-41a0-88e8-b251580d7258/cRfMrhXVNW.json" title="Lottie Animation" frameborder="0" style="width:100%; height:600px; top:5; position: absolute"></iframe>'
   st.write(iframe_html, unsafe_allow_html=True)
