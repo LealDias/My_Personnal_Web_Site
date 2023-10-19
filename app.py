@@ -24,7 +24,7 @@ local_css("style/style.css")
 
 
 
-lottie_json = "astronot .json"
+lottie_json = "astronot.json"
 
 image_contact_form = Image.open("images/GitProfile.PNG")
 image_kaggle = Image.open("images/KaggleProfile.PNG")
